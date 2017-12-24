@@ -23,12 +23,12 @@ function sayHiToGrandma(phrase) {
     case true:  // lower case input
       retval = "I can\'t hear you!";
       break;
-   /*case false: // either upper or mixed case input
+   case false: // either upper or mixed case input
       switch (phrase === phrase.toUpperCase()) {
         case true: // upper case input
           retval = "YES INDEED!";
           break;
-        case false: // mixex case input
+        /*case false: // mixed case input
           retval = "I love you, too.";
           break;
         default: // shouldn't get here, but...
