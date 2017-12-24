@@ -29,14 +29,17 @@ function sayHiToGrandma(phrase) {
           retval = "YES INDEED!";
           break;
         case false: // mixex case input
-          retval = "I love you, too."
+          retval = "I love you, too.";
           break;
         default: // shouldn't get here, but...
-          retval = "sayHiToGrandma() fell through all switches."
+          retval = "sayHiToGrandma() fell through all switches.";
+          break;
     default: // shouldn't get here, but...
-      retval = "sayHiToGrandma() fell through first switch."
+      retval = "sayHiToGrandma() fell through first switch.";
+      break;
     }
   }
+  return retval;
 }
 
 
