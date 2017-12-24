@@ -19,6 +19,7 @@ function sayHiToGrandma(phrase) {
   
   var retval = "no value set to return from sayHiToGrandma()";
   
+  /*
   switch (phrase === phrase.toLowerCase()) {
     case true:  // lower case input
       retval = "I can\'t hear you!";
@@ -40,6 +41,7 @@ function sayHiToGrandma(phrase) {
     }
   }
   return retval;
+  */
 }
 
 
