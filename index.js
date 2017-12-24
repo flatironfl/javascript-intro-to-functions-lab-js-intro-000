@@ -17,26 +17,27 @@ function logWhisper(incoming) {
 
 function sayHiToGrandma(phrase) {
   
-  switch phrase === phrase.toLowerCase():
-    case true: 
-      returnval = "I can\'t hear you!";
-    case false: 
-      switch phrase ==== phrase.toUpperCase():
-        case true:
-          return 
+  var retval = "no value set to return from sayHiToGrandma()";
+  
+  switch (phrase === phrase.toLowerCase()) {
+    case true:  // lower case input
+      retval = "I can\'t hear you!";
+      break;
+    case false: // either upper or mixed case input
+      switch (phrase === phrase.toUpperCase()) {
+        case true: // upper case input
+          retval = "YES INDEED!";
+          break;
+        case false: // mixex case input
+          retval = "I love you, too."
+          break;
+        default: // shouldn't get here, but...
+          retval = "sayHiToGrandma() fell through all switches."
+    default: // shouldn't get here, but...
+      retval = "sayHiToGrandma() fell through first switch."
+    }
+  }
 }
 
 
 
-describe('sayHiToGrandma(string)', function() {
-  it('returns "I can\'t hear you!" if `string` is lowercase', function() {
-    expect(sayHiToGrandma('hello')).toEqual("I can't hear you!")
-  })
-
-  it('returns "YES INDEED!" if `string` is uppercase', function() {
-    expect(sayHiToGrandma('HELLO')).toEqual("YES INDEED!")
-  })
-
-  it('returns "I love you, too." if `string` is "I love you, Grandma."`', function() {
-    expect(sayHiToGrandma("I love you, Grandma.")).toEqual("I love you, too.")
-  })
