@@ -34,11 +34,12 @@ function sayHiToGrandma(phrase) {
         default: // shouldn't get here, but...
           retval = "sayHiToGrandma() fell through all switches.";
           break;
+      }
+      break;
     default: // shouldn't get here, but...
       retval = "sayHiToGrandma() fell through first switch.";
       break;
     }
-  }
   return retval;
 }
 
