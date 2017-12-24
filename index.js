@@ -28,12 +28,12 @@ function sayHiToGrandma(phrase) {
         case true: // upper case input
           retval = "YES INDEED!";
           break;
-        /*case false: // mixed case input
+        case false: // mixed case input
           retval = "I love you, too.";
           break;
         default: // shouldn't get here, but...
           retval = "sayHiToGrandma() fell through all switches.";
-          break; */
+          break;
     default: // shouldn't get here, but...
       retval = "sayHiToGrandma() fell through first switch.";
       break;
