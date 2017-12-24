@@ -16,7 +16,9 @@ function logWhisper(incoming) {
 }
 
 function sayHiToGrandma(phrase) {
-  switch phrase 
+  switch phrase === phrase.toLowerCase():
+    case true:
+      
 }
 
 
