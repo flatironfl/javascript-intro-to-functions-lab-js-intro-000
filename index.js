@@ -19,6 +19,15 @@ function sayHiToGrandma(phrase) {
   
   var retval = "no value set to return from sayHiToGrandma()";
   
+  if (phrase === phrase.toLowerCase()) { // lower case
+      retval = "I can\'t hear you!";
+  } else if (phrase === phrase.toUpperCase()) {
+      retval = "YES INDEED!";
+  } else { // mixed case 
+      retval = "I love you, too.";
+  }
+
+/*
   switch (phrase === phrase.toLowerCase()) {
     case true:  // lower case input
       retval = "I can\'t hear you!";
@@ -40,6 +49,7 @@ function sayHiToGrandma(phrase) {
       retval = "sayHiToGrandma() fell through first switch.";
       break;
     }
+    */
   return retval;
 }
 
