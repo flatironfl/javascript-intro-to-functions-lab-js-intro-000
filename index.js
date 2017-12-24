@@ -16,9 +16,10 @@ function logWhisper(incoming) {
 }
 
 function sayHiToGrandma(phrase) {
+  
   switch phrase === phrase.toLowerCase():
     case true: 
-      return "I can\'t hear you!";
+      returnval = "I can\'t hear you!";
     case false: 
       switch phrase ==== phrase.toUpperCase():
         case true:
